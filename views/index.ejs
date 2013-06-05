@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Chat & +1 1:1</title>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+
+    </head>
+    <body>
+        <header>
+            <h1>Chat & +1 1:1</h1>
+        </header>
+        <section>
+            <form id="formulario" name="formulario" action="/">
+                <input type="text" id="nombre" placeholder="Escribí tu nombre" />
+                <div id="incremento">0</div>
+                <div id="nombres"></div>
+            </form>
+        </section>
+        <section>
+            <div id="chat">
+                <div id="chat-usuario">Usuario</div>
+                <textarea id="chat-historial" cols="20" rows="7"></textarea>
+                <input type="text" id="chat-text" maxlength="20" />
+            </div>
+        </section>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://127.0.0.1:3000/socket.io/socket.io.js"></script>
+    <script src="/javascripts/script.js"></script>
+</html>
